@@ -7,7 +7,7 @@ namespace NumberClassificationAPI__HNG_.Controllers
 {
     [ApiController]
     
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class NumClassController : ControllerBase
     {
 
