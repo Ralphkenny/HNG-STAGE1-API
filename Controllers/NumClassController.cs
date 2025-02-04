@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 namespace NumberClassificationAPI__HNG_.Controllers
 {
     [ApiController]
-    
     [Route("api/[controller]")]
     public class NumClassController : ControllerBase
     {
