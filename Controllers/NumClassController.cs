@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -10,11 +11,21 @@ namespace NumberClassificationAPI__HNG_.Controllers
     public class NumClassController : Controller
     {
 
+        //private readonly HttpClient _httpClient;
+        //public NumClassController(HttpClient httpClient)
+        //{
+        //    _httpClient = httpClient;
+        //}
+
+        private readonly IMemoryCache _cache;
         private readonly HttpClient _httpClient;
-        public NumClassController(HttpClient httpClient)
+
+        public NumClassController(HttpClient httpClient, IMemoryCache cache)
         {
             _httpClient = httpClient;
+            _cache = cache;
         }
+
 
         [HttpGet]
         public async Task<IActionResult> GetNumClass([FromQuery] string number)
@@ -36,15 +47,29 @@ namespace NumberClassificationAPI__HNG_.Controllers
             return Ok(response);
         }
 
+        //private bool IsPrime(int num)
+        //{
+        //    if (num < 2) return false;
+        //    for (int i = 2; i * i <= num; i++)
+        //    {
+        //        if (num % i == 0) return false;
+        //    }
+        //    return true;
+        //}
+
         private bool IsPrime(int num)
         {
             if (num < 2) return false;
-            for (int i = 2; i * i <= num; i++)
+            if (num == 2 || num == 3) return true;
+            if (num % 2 == 0) return false;
+
+            for (int i = 3; i * i <= num; i += 2)
             {
                 if (num % i == 0) return false;
             }
             return true;
         }
+
 
         private bool IsPerfect(int num)
         {
@@ -95,18 +120,39 @@ namespace NumberClassificationAPI__HNG_.Controllers
             return sum;
         }
 
+        //private async Task<string> GetFunFact(int num)
+        //{
+        //    var url = $"http://numbersapi.com/{num}";
+        //    try
+        //    {
+        //        return await _httpClient.GetStringAsync(url);
+        //    }
+        //    catch
+        //    {
+        //        return "Fun fact not available.";
+        //    }
+        //}
+
         private async Task<string> GetFunFact(int num)
         {
+            if (_cache.TryGetValue(num, out string funFact))
+            {
+                return funFact;
+            }
+
             var url = $"http://numbersapi.com/{num}";
             try
             {
-                return await _httpClient.GetStringAsync(url);
+                funFact = await _httpClient.GetStringAsync(url);
+                _cache.Set(num, funFact, TimeSpan.FromHours(1)); // Cache for 1 hour
+                return funFact;
             }
             catch
             {
                 return "Fun fact not available.";
             }
         }
+
     }
 
 }

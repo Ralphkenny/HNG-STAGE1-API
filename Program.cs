@@ -9,6 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddMemoryCache();
+builder.Services.AddResponseCompression();
+
+
 
 // Register HttpClient for making external API calls
 builder.Services.AddHttpClient();
@@ -26,6 +30,15 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+app.UseResponseCompression();
+app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
+app.UseCors(); // Apply CORS settings
+
+
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -36,11 +49,5 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Number Classification API v1");
     });
 }
-
-
-
-app.UseCors(); // Apply CORS settings
-app.UseAuthorization();
-app.MapControllers();
-
 app.Run();
+
