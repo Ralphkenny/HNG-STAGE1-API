@@ -1,6 +1,6 @@
 @NumberClassificationAPI__HNG__HostAddress = http://localhost:5287
 
-GET {{NumberClassificationAPI__HNG__HostAddress}}/weatherforecast/
+GET {{NumberClassificationAPI__HNG__HostAddress}}/NumClass/
 Accept: application/json
 
 ###
