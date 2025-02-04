@@ -5,9 +5,13 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>NumberClassificationAPI__HNG_</RootNamespace>
+    <UserSecretsId>734492b4-188c-40e2-bb93-e2826bbaead5</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
   </ItemGroup>
 

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jRYoNduwUtY=",
+  "dgSpecHash": "gBwjX+9zzHA=",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\OneDrive\\Desktop\\NumberClassificationAPI (HNG)\\NumberClassificationAPI (HNG).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.openapi\\1.6.22\\microsoft.openapi.1.6.22.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore\\7.2.0\\swashbuckle.aspnetcore.7.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\7.2.0\\swashbuckle.aspnetcore.swagger.7.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\7.2.0\\swashbuckle.aspnetcore.swaggergen.7.2.0.nupkg.sha512",

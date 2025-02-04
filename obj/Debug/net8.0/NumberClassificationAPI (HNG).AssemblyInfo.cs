@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("734492b4-188c-40e2-bb93-e2826bbaead5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("NumberClassificationAPI (HNG)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1318c1ab590c41c8c300f79c3f72d4d6c647fb0")]
 [assembly: System.Reflection.AssemblyProductAttribute("NumberClassificationAPI (HNG)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NumberClassificationAPI (HNG)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
