@@ -7,7 +7,7 @@ namespace NumberClassificationAPI__HNG_.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class NumClassController : ControllerBase
+    public class NumClassController : Controller
     {
 
         private readonly HttpClient _httpClient;
