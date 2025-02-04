@@ -19,7 +19,7 @@ This is a public API that classifies numbers based on mathematical properties an
 
 ## API Documentation
 ### **Endpoint**
-**GET /api/classify-number?number={number}**
+**GET /api/numclass?number={number}**
 
 ### **Response Format (200 OK)**
 ```json
@@ -57,11 +57,11 @@ dotnet run
 ### **3. Test the API**
 - Open in browser or Postman:
   ```
-  http://localhost:5000/api/classify-number?number=371
+  http://localhost:5000/api/numclass?number=371
   ```
 
 ## Deployment
-This API is hosted on a publicly accessible platform. Access it [here](your-deployment-url).
+This API is hosted on a publicly accessible platform. Access it [here](https://hng-stage1-api.onrender.com/api/numclass?number=371).
 
 ## Backlinks
 

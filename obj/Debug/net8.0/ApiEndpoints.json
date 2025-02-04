@@ -2,7 +2,7 @@
   {
     "ContainingType": "NumberClassificationAPI__HNG_.Controllers.NumClassController",
     "Method": "GetNumClass",
-    "RelativePath": "NumClass",
+    "RelativePath": "api/NumClass",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -14,25 +14,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NumberClassificationAPI__HNG_.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[NumberClassificationAPI__HNG_.WeatherForecast, NumberClassificationAPI (HNG), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   }
 ]
