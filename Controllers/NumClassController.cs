@@ -136,6 +136,7 @@ namespace NumberClassificationAPI__HNG_.Controllers
 
         private int GetDigitSum(int num)
         {
+            num = Math.Abs(num); // Convert negative numbers to positive
             int sum = 0;
             while (num > 0)
             {
@@ -158,7 +159,7 @@ namespace NumberClassificationAPI__HNG_.Controllers
         //    }
         //}
 
-        private async Task<string> GetFunFact(int num)
+         private async Task<string> GetFunFact(int num)
         {
             var url = $"http://numbersapi.com/{num}";
             try

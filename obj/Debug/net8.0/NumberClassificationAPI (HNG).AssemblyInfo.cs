@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NumberClassificationAPI (HNG)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f278888361025ff2b47d1f00fbcf2cc9861b5b76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34e4bc7a674b422dcf0718996bbb4f67a535c0a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("NumberClassificationAPI (HNG)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NumberClassificationAPI (HNG)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
