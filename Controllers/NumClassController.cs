@@ -61,7 +61,7 @@ namespace NumberClassificationAPI__HNG_.Controllers
         private bool IsPrime(int num)
         {
             if (num < 2) return false;
-            if (num == 2) return true;
+            if (num == 2 || num == 3) return true;
             if (num % 2 == 0) return false;
 
             for (int i = 3; i * i <= num; i += 2)
@@ -161,23 +161,39 @@ namespace NumberClassificationAPI__HNG_.Controllers
         private async Task<string> GetFunFact(int num)
         {
             var url = $"http://numbersapi.com/{num}";
-            var fact = "";
             try
             {
-                using var cts = new CancellationTokenSource(TimeSpan.FromMilliseconds(300)); // Set timeout limit
-                if (!_cache.TryGetValue(num, out fact))
-                {
-                    fact = await _httpClient.GetStringAsync(url, cts.Token);
-                    _cache.Set(num, fact, TimeSpan.FromMinutes(10)); // Cache for 10 minutes
-                }
-                return fact;
+                return await _httpClient.GetStringAsync(url);
             }
-
             catch
             {
                 return "Fun fact not available.";
             }
         }
+
+        //private async Task<string> GetFunFact(int num)
+        //{
+        //    {
+        //    }
+
+        //    var url = $"http://numbersapi.com/{num}";
+        //    try
+        //    {
+        //        using var cts = new CancellationTokenSource(TimeSpan.FromMilliseconds(300)); // Set timeout limit
+        //        if (_cache.TryGetValue(num, out string funFact))
+        //        {
+
+        //        }
+        //            string fact = await _httpClient.GetStringAsync(url, cts.Token);
+        //        _cache.Set(num, fact, TimeSpan.FromMinutes(10)); // Cache for 10 minutes
+        //        return fact;
+        //    }
+
+        //    catch
+        //    {
+        //        return "Fun fact not available.";
+        //    }
+        //}
 
     }
 
