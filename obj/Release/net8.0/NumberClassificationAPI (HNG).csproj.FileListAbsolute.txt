@@ -1,0 +1,36 @@
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\appsettings.Development.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\appsettings.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\NumberClassificationAPI (HNG).staticwebassets.endpoints.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\NumberClassificationAPI (HNG).exe
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\NumberClassificationAPI (HNG).deps.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\NumberClassificationAPI (HNG).runtimeconfig.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\NumberClassificationAPI (HNG).dll
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\NumberClassificationAPI (HNG).pdb
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\Microsoft.OpenApi.dll
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).AssemblyInfo.cs
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).sourcelink.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\scopedcss\bundle\NumberClassificationAPI (HNG).styles.css
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets.build.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets.development.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets.build.endpoints.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets\msbuild.NumberClassificationAPI (HNG).Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets\msbuild.NumberClassificationAPI (HNG).Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets\msbuild.build.NumberClassificationAPI (HNG).props
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.NumberClassificationAPI (HNG).props
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.NumberClassificationAPI (HNG).props
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\staticwebassets.pack.json
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberCl.79525EBF.Up2Date
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).dll
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\refint\NumberClassificationAPI (HNG).dll
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).pdb
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\NumberClassificationAPI (HNG).genruntimeconfig.cache
+C:\Users\USER\OneDrive\Desktop\NumberClassificationAPI (HNG)\obj\Release\net8.0\ref\NumberClassificationAPI (HNG).dll

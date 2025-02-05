@@ -28,13 +28,20 @@ builder.Services.AddCors(options =>
     });
 });
 
+// **Add Response Compression Here**
+builder.Services.AddResponseCompression(options =>
+{
+    options.EnableForHttps = true;
+});
+
+
 var app = builder.Build();
 
 app.UseResponseCompression();
 app.UseHttpsRedirection();
+app.UseCors("AllowAll"); // Apply CORS settings
 app.UseAuthorization();
 app.MapControllers();
-app.UseCors(); // Apply CORS settings
 
 
 

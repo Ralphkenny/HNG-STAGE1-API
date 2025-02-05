@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using System;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -71,19 +72,43 @@ namespace NumberClassificationAPI__HNG_.Controllers
         }
 
 
+
+
+
         private bool IsPerfect(int num)
         {
             int sum = 1;
-            for (int i = 2; i * i <= num; i++)
+            int sqrt = (int)Math.Sqrt(num);
+            for (int i = 2; i <= sqrt; i++)
             {
                 if (num % i == 0)
                 {
-                    sum += i;
-                    if (i != num / i) sum += num / i;
+                    sum += i + (num / i);
                 }
             }
             return sum == num && num != 1;
         }
+
+
+        //private bool IsPerfect(int num)
+        //{
+        //    int sum = 1;
+        //    for (int i = 2; i * i <= num; i++)
+        //    {
+        //        if (num % i == 0)
+        //        {
+        //            sum += i;
+        //            if (i != num / i) sum += num / i;
+        //        }
+        //    }
+        //    return sum == num && num != 1;
+        //}
+
+
+
+
+
+
 
         private string[] GetNumberProperties(int num)
         {
@@ -143,10 +168,12 @@ namespace NumberClassificationAPI__HNG_.Controllers
             var url = $"http://numbersapi.com/{num}";
             try
             {
-                funFact = await _httpClient.GetStringAsync(url);
-                _cache.Set(num, funFact, TimeSpan.FromHours(1)); // Cache for 1 hour
-                return funFact;
+                using var cts = new CancellationTokenSource(TimeSpan.FromMilliseconds(300)); // Set timeout limit
+                string fact = await _httpClient.GetStringAsync(url, cts.Token);
+                _cache.Set(num, fact, TimeSpan.FromMinutes(10)); // Cache for 10 minutes
+                return fact;
             }
+
             catch
             {
                 return "Fun fact not available.";
@@ -156,3 +183,13 @@ namespace NumberClassificationAPI__HNG_.Controllers
     }
 
 }
+
+
+
+
+//try
+//{
+//    funFact = await _httpClient.GetStringAsync(url);
+//    _cache.Set(num, funFact, TimeSpan.FromHours(1)); // Cache for 1 hour
+//    return funFact;
+//}
