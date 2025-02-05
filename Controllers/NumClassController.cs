@@ -29,7 +29,7 @@ namespace NumberClassificationAPI__HNG_.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetNumClass([FromQuery] string number)
+        public async Task<IActionResult> GetNumClass([FromQuery] string? number)
         {
             
             // Check if the number parameter is missing or empty
