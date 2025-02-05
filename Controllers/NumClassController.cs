@@ -61,7 +61,7 @@ namespace NumberClassificationAPI__HNG_.Controllers
         private bool IsPrime(int num)
         {
             if (num < 2) return false;
-            if (num == 2 || num == 3) return true;
+            if (num == 2) return true;
             if (num % 2 == 0) return false;
 
             for (int i = 3; i * i <= num; i += 2)
@@ -160,17 +160,16 @@ namespace NumberClassificationAPI__HNG_.Controllers
 
         private async Task<string> GetFunFact(int num)
         {
-            if (_cache.TryGetValue(num, out string funFact))
-            {
-                return funFact;
-            }
-
             var url = $"http://numbersapi.com/{num}";
+            var fact = "";
             try
             {
                 using var cts = new CancellationTokenSource(TimeSpan.FromMilliseconds(300)); // Set timeout limit
-                string fact = await _httpClient.GetStringAsync(url, cts.Token);
-                _cache.Set(num, fact, TimeSpan.FromMinutes(10)); // Cache for 10 minutes
+                if (!_cache.TryGetValue(num, out fact))
+                {
+                    fact = await _httpClient.GetStringAsync(url, cts.Token);
+                    _cache.Set(num, fact, TimeSpan.FromMinutes(10)); // Cache for 10 minutes
+                }
                 return fact;
             }
 
