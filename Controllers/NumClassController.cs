@@ -124,24 +124,29 @@ namespace NumberClassificationAPI__HNG_.Controllers
 
         private bool IsArmstrong(int num)
         {
-            int sum = 0, temp = num, digits = num.ToString().Length;
-            while (temp > 0)
+            int originalNum = num;
+            num = Math.Abs(num);
+            double sum = 0;
+            var str_num = num.ToString();
+            var len = str_num.Length;
+            while (num > 0)
             {
-                int digit = temp % 10;
-                sum += (int)Math.Pow(digit, digits);
-                temp /= 10;
+                sum += Math.Pow((num % 10), len);
+                num /= 10;
             }
-            return sum == num;
+            return sum == Math.Abs(originalNum);
         }
 
         private int GetDigitSum(int num)
         {
             num = Math.Abs(num); // Convert negative numbers to positive
             int sum = 0;
+
             while (num > 0)
             {
                 sum += num % 10;
                 num /= 10;
+
             }
             return sum;
         }
