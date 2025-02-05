@@ -31,6 +31,14 @@ namespace NumberClassificationAPI__HNG_.Controllers
         [HttpGet]
         public async Task<IActionResult> GetNumClass([FromQuery] string number)
         {
+            
+            // Check if the number parameter is missing or empty
+            if (string.IsNullOrWhiteSpace(number))
+            {
+                return BadRequest(new { error = true, number = "" });
+            }
+
+
             if (!int.TryParse(number, out int num)) 
             {
                 return BadRequest(new { number, error = true });
