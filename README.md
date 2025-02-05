@@ -61,7 +61,7 @@ dotnet run
   ```
 
 ## Deployment
-This API is hosted on a publicly accessible platform. Access it [here](https://hng-stage1-api.fly.dev/api/numclass?number=371).
+This API is hosted on a publicly accessible platform. Access it [here](https://hng-stage1-api.onrender.com/api/numclass?number=371).
 
 ## Backlinks
 
